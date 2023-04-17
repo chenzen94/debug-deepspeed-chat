@@ -36,8 +36,6 @@ from alpaca_rlhf.training_model.step3_rlhf_finetuning.rlhf_engine import DeepSpe
 
 import sys
 
-os.environ["PATH"] = os.environ["PATH"] + ":/root/miniconda3/bin/"
-
 sys.path.append(
     os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir)))
 from alpaca_rlhf.training_model.utils.data.data_utils import create_prompt_dataset, MiniDataset, DataCollatorRLHF, get_unsupervised_data
