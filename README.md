@@ -2,7 +2,7 @@
 在IDE里调试DeepSpeed-Chat。原来的DeepSpeed-Chat库需要deepspeed命令启动，没法在IDE里调试。这里增加[my_deepspeed](alpaca_rlhf/training_model/my_deepspeed.py)脚本，在IDE里用这个脚本启动每一步，就可以一步一步调试DeepSpeed-Chat了。
 
 ## Stey by Step
-### Remote Debug Using PyCharm
+### Debug Using PyCharm
 - [Bootstrap Script](alpaca_rlhf/training_model/my_deepspeed.py)
   - single gpu args
     - step1: --num_gpus 1 alpaca_rlhf/training_model/step1_supervised_finetuning/main.py --gradient_accumulation_steps 2 --lora_dim 128 --zero_stage 0 --deepspeed --output_dir /root/autodl-tmp/actor
